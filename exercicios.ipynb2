@@ -1,0 +1,739 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Marcosvinici4s/Repositorio-simples/blob/main/exercicios.ipynb2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 1 :***\n",
+        "Faça um algoritmo que receba dois números e exiba o resultado da sua soma."
+      ],
+      "metadata": {
+        "id": "XmtXXen-l0VI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = int(input(\"insira um valor \"))\n",
+        "n2 = int(input(\"insira um valor \"))\n",
+        "\n",
+        "n3= n1 + n2\n",
+        "\n",
+        "print('seu valor é:',  n3)"
+      ],
+      "metadata": {
+        "id": "P9g8mcOshAh5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 2 :***\n",
+        "Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão dos\n",
+        "números lidos.\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "A4K1FOZHl2Rg"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1= int (input(\"insira um valor\"))\n",
+        "n2= int (input(\"insira um valor\"))\n",
+        "n3= input (\"insira o operador (+, - *- ,/ ): \")\n",
+        "\n",
+        "\n",
+        "if n3== \"-\" :\n",
+        "  print(\"seu valor é \",n1 - n2)\n",
+        "\n",
+        "elif n3== \"*\":\n",
+        "  print(\"seu valor é \",n1 * n2)\n",
+        "\n",
+        "elif n3 == \"/\" :\n",
+        "  print(\"seu valor é \",n1 / n2)\n",
+        "else:\n",
+        "  print('seu valor é',  n1 + n2)"
+      ],
+      "metadata": {
+        "id": "AEU8aaIMSvSQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 3 :***\n",
+        "Escrever um algoritmo para determinar o consumo médio de um automóvel sendo fornecida a distância total\n",
+        "percorrida pelo automóvel e o total de combustível gasto."
+      ],
+      "metadata": {
+        "id": "JOY6hsYOl5E5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "SN0e9pscYlPO"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1= int (input(\"insira os km's\"))\n",
+        "n2= int (input(\"insira os litros usados:\"))\n",
+        "n3 = n1 / n2\n",
+        "\n",
+        "print('seu consumo medio é:',  n3, \"km/L\")"
+      ],
+      "metadata": {
+        "id": "Gcop1DEqZF1_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 4 :***\n",
+        "Escrever um algoritmo que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no\n",
+        "mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o\n",
+        "seu nome, o salário fixo e salário no final do mês."
+      ],
+      "metadata": {
+        "id": "VKGRGGohl8nI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome: input(\"insira o nome do vendedor :\")\n",
+        "soldo =(2500)\n",
+        "vendas = int(input(\"digite a quantidade de vendas :\"))\n",
+        "porcentagem = (vendas * 0.15)\n",
+        "salariofinal = (porcentagem + soldo)\n",
+        "\n",
+        "print(salariofinal)"
+      ],
+      "metadata": {
+        "id": "OgoSjQRGWFLL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 5 :***\n",
+        "Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no semestre. No final\n",
+        "informar o nome do aluno e a sua média (aritmética)."
+      ],
+      "metadata": {
+        "id": "Ftrc2LILl_L4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome= input(\"digte o nome do aluno :\")\n",
+        "n1= int(input(\"insira as notas :\"))\n",
+        "n2= int(input(\"insira as notas :\"))\n",
+        "n3= int(input(\"insira as notas :\"))\n",
+        "\n",
+        "media= int((n1 + n2 + n3)/ 3)\n",
+        "\n",
+        "print (\"nome\", nome)\n",
+        "print(\"A media é:\", media)"
+      ],
+      "metadata": {
+        "id": "3tVL0bNsWPtD"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ***Exercicio  :***\n",
+        " Ler dois valores para as variáveis A e B, e efetuar as trocas dos valores de forma que a variável A passe a possuir o\n",
+        "valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados"
+      ],
+      "metadata": {
+        "id": "kEGXT1PFmBko"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= 5\n",
+        "b= 7\n",
+        "\n",
+        "print(\"valor de a\", a)\n",
+        "print(\"valor de b\", b)\n",
+        "\n",
+        "a,b=b,a\n",
+        "\n",
+        "print(\"valor de a\",a)\n",
+        "print(\"valor de b\",b)"
+      ],
+      "metadata": {
+        "id": "AyJ-Z9NSWZXz"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ***Exercicio 7 :***\n",
+        "Ler uma temperatura em graus Celsius e apresentá-la convertida em graus Fahrenheit. A fórmula de conversão é:\n",
+        "F=(9*C+160) / 5, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius."
+      ],
+      "metadata": {
+        "id": "6h2_dIK0mIZn"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "temp= float(input(\"entre com a temperatura em graus Celsius: \"))\n",
+        "f= ((9 * temp + 160)/5)\n",
+        "print(\"seu valor é :\",f)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oGsuC4e_Wc_s",
+        "outputId": "483c6b09-bbc3-4b96-a2e8-bb4a0b03b03b"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "entre com a temperatura em graus Celsius: 30\n",
+            "seu valor é : 86.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ***Exercicio 8 :***\n",
+        " Elaborar um algoritmo que efetue a apresentação do valor da conversão em real (R$) de um valor lido em dólar\n",
+        "(US$). O algoritmo deverá solicitar o valor da cotação do dólar e também a quantidade de dólares disponíveis com o\n",
+        "usuário."
+      ],
+      "metadata": {
+        "id": "ckfvbZL8mL25"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "real = float(input(\"insira um valor\"))\n",
+        "dolar = float (4.92)\n",
+        "\n",
+        "\n",
+        "print(\"O valor da cotação do dolar em reais é: \", dolar )\n",
+        "calculo= (real / dolar )\n",
+        "print(\"o valor convertido em dolar é :\", calculo)"
+      ],
+      "metadata": {
+        "id": "oWK-nmguWkJk"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 9 :***\n",
+        "Faça um algoritmo que receba um valor que foi depositado e exiba o valor com rendimento após um mês.\n",
+        " Considere fixo o juro da poupança em 0,70% a. m.\n"
+      ],
+      "metadata": {
+        "id": "J__xvRDEmV1Q"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "juros= float(0.70)\n",
+        "valor= int(input(\"insira o valor desejado\"))\n",
+        "c= valor * juros\n",
+        "print(\"O valor do rendimento é R$ \", c, \"por mês\")"
+      ],
+      "metadata": {
+        "id": "c5NrupXlWtm-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 10 :***\n",
+        "A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco) prestações sem juros. Faça um algoritmo que\n",
+        "receba um valor de uma compra e mostre o valor das prestações."
+      ],
+      "metadata": {
+        "id": "mKPPX4J1mWwA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor= float(input(\"insira o valor da compra\"))\n",
+        "c=  (float(valor / 5))\n",
+        "print  (\"o valor da compra é :\", c)"
+      ],
+      "metadata": {
+        "id": "LyYZFtKmWw0V"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 11 :***\n",
+        "Faça um algoritmo que receba o preço de custo de um produto e mostre o valor de venda. Sabe-se que o preço de\n",
+        "custo receberá um acréscimo de acordo com um percentual informado pelo usuário.\n"
+      ],
+      "metadata": {
+        "id": "Apl1s0TjmayZ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor_produto= int(input(\"insira o valor produto\"))\n",
+        "print(\"valor_produto\")\n",
+        "porcentagem= float(input(\"insira o valor da porcentagem a ser acrescentada\"))\n",
+        "a= (porcentagem / 100) + valor_produto\n",
+        "print(\"a\", a )"
+      ],
+      "metadata": {
+        "id": "0AxR5HhSWx4d"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 12 :***\n",
+        "O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do distribuidor e dos\n",
+        "impostos (aplicados, primeiro os impostos sobre o custo de fábrica, e depois a percentagem do distribuidor sobre o\n",
+        "resultado). Supondo que a percentagem do distribuidor seja de 28% e os impostos 45%. Escrever um algoritmo que\n",
+        "leia o custo de fábrica de um carro e informe o custo ao consumidor do mesmo.\n"
+      ],
+      "metadata": {
+        "id": "g7OCaGmdmdb4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "valor_carro= int(input(\"insira o valor produto\"))\n",
+        "print(\"valor_produto\")\n",
+        "juros= float(input(\"insira o valor correspondente aos juros\"))\n",
+        "imposto= float(input(\"insira o valor correspondente ao imposto\"))\n",
+        "a= (juros + imposto / 100) + valor_carro\n",
+        "print(\"a\", a )"
+      ],
+      "metadata": {
+        "id": "-4NVXLCeW3GV"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 13 :***\n",
+        "Faça um algoritmo que receba um número e mostre uma mensagem caso este número seja maior que 10."
+      ],
+      "metadata": {
+        "id": "QO-AZO5smiRQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1= int(input(\"digite um valor\"))\n",
+        "if n1 >10 :\n",
+        "  print(\"limite atingido\")"
+      ],
+      "metadata": {
+        "id": "fk_0_N7VW7lE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 14 :***\n",
+        "Escrever um algoritmo que leia dois valores inteiro distintos e informe qual é o maior.\n"
+      ],
+      "metadata": {
+        "id": "at0PW0DWmkw4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n1 = int(input(\"Digite um valor:\"))\n",
+        "n2 = int(input(\"Digite outro valor:\"))\n",
+        "\n",
+        "if n1 > n2:\n",
+        "  print(\"O maior é \", n1)\n",
+        "else\n",
+        "print(\"O maior é\", n2)\n"
+      ],
+      "metadata": {
+        "id": "0cX3ywyJXNw9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 15 :***\n",
+        "Testar o numero se esta entre 100 e 200 ( >100 e <200)  e AND"
+      ],
+      "metadata": {
+        "id": "q6X6RsbRlU-x"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numero = int(input(\"Digite o número : \"))\n",
+        "\n",
+        "#testar o numero se esta entre 100 e 200 ( >100 e <200)  e AND\n",
+        "\n",
+        "if numero > 100 and numero < 200:\n",
+        "  print(\"O numero esta entre 100 e 200\")\n",
+        "else:\n",
+        "  print(\"O numero não está entre 100 e 200\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "OVlc66pwjNyv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ***Exercicio 16 :***\n",
+        "Escrever um algoritmo que leia o nome e as três notas obtidas por um aluno durante o semestre. Calcular a sua\n",
+        "média (aritmética), informar o nome e sua menção aprovado (media >= 7), Reprovado (media <= 5) e Recuperação\n",
+        "(media entre 5.1 a 6.9).\n"
+      ],
+      "metadata": {
+        "id": "lL2xO2pamoSh"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "xbwgVD-pjt4s"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 17 :***\n",
+        "Ler 80 números e ao final informar quantos número(s) est(á)ão no intervalo entre 10 (inclusive) e 150 (inclusive)"
+      ],
+      "metadata": {
+        "id": "5UW3DHu3muUx"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ***Exercicio 18 :***\n",
+        " Faça um algoritmo que receba a idade de 75 pessoas e mostre mensagem informando “maior de idade” e “menor de\n",
+        "idade” para cada pessoa. Considere a idade a partir de 18 anos como maior de idade."
+      ],
+      "metadata": {
+        "id": "LH5k3DGgmxkX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 19 :***\n",
+        "Escrever um algoritmo que leia o nome e o sexo de 56 pessoas e informe o nome e se ela é homem ou mulher. No\n",
+        "final informe total de homens e de mulheres.\n"
+      ],
+      "metadata": {
+        "id": "lhnzW-UIm0ha"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 20 :***\n",
+        "A concessionária de veículos “CARANGO VELHO” está vendendo os seus veículos com desconto. Faça um\n",
+        "algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente de vários carros. O desconto\n",
+        "deverá ser calculado de acordo com o ano do veículo. Até 2000 - 12% e acima de 2000 - 7%. O sistema deverá\n",
+        "perguntar se deseja continuar calculando desconto até que a resposta seja: “(N) Não” . Informar total de carros com\n",
+        "ano até 2000 e total geral.\n"
+      ],
+      "metadata": {
+        "id": "jqdQayvwm4wI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 21 :***\n",
+        "Escrever um algoritmo que leia os dados de “N” pessoas (nome, sexo, idade e saúde) e informe se está apta ou não\n",
+        "para cumprir o serviço militar obrigatório. Informe os totais."
+      ],
+      "metadata": {
+        "id": "Gj-afo5am7GR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 22 :***\n",
+        "Faça um algoritmo que receba o preço de custo e o preço de venda de 40 produtos. Mostre como resultado se\n",
+        "houve lucro, prejuízo ou empate para cada produto. Informe media de preço de custo e do preço de venda."
+      ],
+      "metadata": {
+        "id": "aQJp10qom90w"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 23 :***\n",
+        "Faça um algoritmo que receba um número e mostre uma mensagem caso este número sege maior que 80, menor\n",
+        "que 25 ou igual a 40"
+      ],
+      "metadata": {
+        "id": "S9ztlQRMnDoY"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 24 :***\n",
+        "Faça um algoritmo que receba “N” números e mostre positivo, negativo ou zero para cada número.\n"
+      ],
+      "metadata": {
+        "id": "VE9mYhJTnG2A"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 25 :***\n",
+        "Faça um algoritmo que leia dois números e identifique se são iguais ou diferentes. Caso eles sejam iguais imprima\n",
+        "uma mensagem dizendo que eles são iguais. Caso sejam diferentes, informe qual número é o maior, e uma\n",
+        "mensagem que são diferentes."
+      ],
+      "metadata": {
+        "id": "QdpM_H2QnJeI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 26 :***\n",
+        "Faça um algoritmo que leia um número de 1 a 5 e escreva por extenso. Caso o usuário digite um número que não\n",
+        "esteja neste intervalo, exibir mensagem: número inválido"
+      ],
+      "metadata": {
+        "id": "jHjKTBP3nMeg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 27 :***\n",
+        "A concessionária de veículos “CARANGO” está vendendo os seus veículos com desconto. Faça um algoritmo que\n",
+        "calcule e exiba o valor do desconto e o valor a ser pago pelo cliente. O desconto deverá ser calculado sobre o valor\n",
+        "do veículo de acordo com o combustível (álcool – 25%, gasolina – 21% ou diesel –14%). Com valor do veículo zero\n",
+        "encerra entrada de dados. Informe total de desconto e total pago pelos clientes"
+      ],
+      "metadata": {
+        "id": "mhtVjnnsnRXQ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 28 :***\n",
+        "Escrever um algoritmo para uma empresa que decide dar um reajuste a seus 584 funcionários de acordo com os\n",
+        "seguintes critérios:\n",
+        "a) 50% para aqueles que ganham menos do que três salários mínimos;\n",
+        "b) 20% para aqueles que ganham entre três até dez salários mínimos;\n",
+        "c) 15% para aqueles que ganham acima de dez até vinte salários mínimos;\n",
+        "d) 10% para os demais funcionários.\n",
+        "\n",
+        "\n",
+        "Leia o nome do funcionário, seu salário e o valor do salário mínimo. Calcule o seu novo salário reajustado. Escrever o\n",
+        "nome do funcionário, o reajuste e seu novo salário. Calcule quanto à empresa vai aumentar sua folha de pagamento."
+      ],
+      "metadata": {
+        "id": "N0wmMouunURa"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 29 :***\n",
+        "Faça um algoritmo que receba o número do mês e mostre o mês correspondente. Valide mês inválido."
+      ],
+      "metadata": {
+        "id": "VSLvdfvtnW0o"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 30 :***\n",
+        "Faça um algoritmo que receba o nome a idade, o sexo e salário fixo de um funcionário. Mostre o nome e o salário\n",
+        "líquido:\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "_lHO8Olrne8X"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ***Exercicio 31 :***\n",
+        " Escrever um algoritmo que leia três valores inteiros distintos e os escreva em ordem crescente.\n"
+      ],
+      "metadata": {
+        "id": "zfmt8zM2n1VP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 32 :***\n",
+        "Dados três valores A, B e C, em que A e B são números reais e C é um caractere, pede-se para imprimir o resultado\n",
+        "da operação de A por B se C for um símbolo de operador aritmético; caso contrário deve ser impressa uma\n",
+        "mensagem de operador não definido. Tratar erro de divisão por zero"
+      ],
+      "metadata": {
+        "id": "oQbhj5B0n5If"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 31 :***\n",
+        "Escrever um algoritmo que leia três valores inteiros e verifique se eles podem ser os lados de um triângulo. Se\n",
+        "forem, informar qual o tipo de triângulo que eles formam: equilátero, isóscele ou escaleno.\n",
+        "Propriedade: o comprimento de cada lado de um triângulo é menor do que a soma dos comprimentos dos outros\n",
+        "dois lados.\n",
+        "\n",
+        "Triângulo Equilátero: aquele que tem os comprimentos dos três lados iguais;\n",
+        "Triângulo Isóscele: aquele que tem os comprimentos de dois lados iguais. Portanto, todo triângulo equilátero é\n",
+        "também isóscele;\n",
+        "Triângulo Escaleno: aquele que tem os comprimentos de seus três lados diferentes"
+      ],
+      "metadata": {
+        "id": "H63DMoqon88I"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 32 :***\n",
+        "A escola “APRENDER” faz o pagamento de seus professores por hora/aula. Faça um algoritmo que calcule e exiba o\n",
+        "salário de um professor. Sabe-se que o valor da hora/aula segue a tabela abaixo:\n",
+        "Professor Nível 1 R$12,00 por hora/aula\n",
+        "Professor Nível 2 R$17,00 por hora/aula\n",
+        "Professor Nível 3 R$25,00 por hora/aula\n"
+      ],
+      "metadata": {
+        "id": "5_xPmi5loB-A"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 33 :***\n",
+        "Elabore um algoritmo que, dada a idade de um nadador. Classifique-o em uma das seguintes categorias:\n",
+        "Infantil A = 5 - 7 anos\n",
+        "Infantil B = 8 - 10 anos\n",
+        "juvenil A = 11- 13 anos\n",
+        "juvenil B = 14 - 17 anos\n",
+        "Sênior = 18 - 25 anos\n",
+        "Apresentar mensagem “idade fora da faixa etária” quando for outro ano não contemplado.\n"
+      ],
+      "metadata": {
+        "id": "ViKLw8BZoESg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "***Exercicio 34 :***\n",
+        "Faça um algoritmo que calcule o valor da conta de luz de uma pessoa. Sabe-se que o cálculo da conta de luz segue\n",
+        "a tabela abaixo:\n",
+        "Tipo de Cliente Valor do KW/h\n",
+        "1 (Residência) 0,60\n",
+        "2 (Comércio) 0,48\n",
+        "3 (Indústria) 1,29"
+      ],
+      "metadata": {
+        "id": "gy-AR2b2oHS4"
+      }
+    }
+  ]
+}
